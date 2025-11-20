@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
+
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -9,9 +10,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    public float speed = 5.0f;
     void Update()
     {
         // Move the vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * 20);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
